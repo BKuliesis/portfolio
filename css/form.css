@@ -1,6 +1,6 @@
 /* Forms */
 
-.form {
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
 }
 
-.form .text-box {
+form .text-box {
     font-family: "Inter", sans-serif;
     margin-bottom: 2em;
     width: 90%;
@@ -24,12 +24,12 @@
     box-sizing: border-box;
 }
 
-.form .text-box:focus {
+form .text-box:focus {
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
     border-radius: 0.15em;
 }
 
-.form textarea {
+form textarea {
     min-height: 1.2em;
     max-height: 20em;
     height: 5em;
@@ -37,7 +37,7 @@
     box-sizing: border-box;
 }
 
-.form .buttons {
+form .buttons {
     display: flex;
     width: 90%;
     justify-content: center;
@@ -46,21 +46,13 @@
     
 }
 
-.form .button {
+form .button {
     flex: 1 1 auto;
     width: 100%;
-    background-color: var(--highlight-color);
-    color: var(--header-footer-bg-color);
-    cursor: pointer;
-}
-
-.form .button:hover {
-    background-color: var(--lighter-highlight-color);
-    border-color: var(--lighter-highlight-color);
 }
 
 @media only screen and (max-width: 768px) {
-    .form {
+    form {
         width: 100%;
         margin: 0;
         padding: 0;
