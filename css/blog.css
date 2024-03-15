@@ -17,7 +17,7 @@ main {
     align-items: center;
     width: 100%;
     gap: 0.5em;
-    margin: 0 3em 2em;
+    margin-bottom: 2em;
 }
 
 .blog-title h1 {
