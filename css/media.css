@@ -6,6 +6,11 @@
         justify-content: space-between;
     }
 
+    main, header {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
     header .button {
         display: none;
     }
