@@ -1,9 +1,13 @@
-/* Media queries for header and section elements */
+/* Media queries for repeating elements */
 
 @media only screen and (max-width: 696px) {
     header {
-        flex-direction: column;
-        row-gap: 1em;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+    }
+
+    header .button {
+        display: none;
     }
 
     section .flex-wrap-content article {
@@ -15,7 +19,7 @@
         width: 100%;
     }
 
-    section {
+    section, .home-flexbox {
         margin: 1em;
     }
 
@@ -28,3 +32,19 @@
     }
 }
 
+@media only screen and (max-width: 495px) {
+    header {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    header span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 416px) {
+    html {
+        font-size: 14px;
+    }
+}

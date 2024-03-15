@@ -7,6 +7,7 @@
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +16,44 @@
 </head>
 <body>
     <header>
-        <span>Benas Kuliesis</span>
+        <span>BK</span>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html"">Contact</a></li>
+                <li><a href="blog.html" class="current-page">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div class="buttons">
+            <a href="addPost.html" class="button addpost">ADD POST</a>
+            <a href="login.html" class="button">LOGIN</a>
+        </div>
     </header>
     <main>
-        <h1>Blog</h1>
-        <a href="addPost.html" class="button">ADD POST</a>
+        <div class="blog-title">
+            <h2>Blog</h2>
+            <div class="buttons">
+                <a href="addPost.html" class="button addpost">ADD POST</a>
+                <a href="login.html" class="button">LOGIN</a>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="date-and-time">
+                <img src="images/clock.png" alt="">
+                <p>14th March 2024, 23:13 UTC</p>
+            </div>
+            <h3>The wonderful world of web programming</h3>
+            <h4>I enjoy developing web applications using HTML, CSS, JavaScript and PHP.</h4>
+        </div>
+        <div class="blog">
+            <div class="date-and-time">
+                <img src="images/clock.png" alt="">
+                <p>15th March 2024, 23:17 UTC</p>
+            </div>
+            <h3>Bootstrap Framework</h3>
+            <h4>I have recently started to utilise Bootstrap classes for developing my web applications.</h4>
+        </div>
     </main>
     <footer>
         &copy; 2024 Benas Kuliesis. All rights reserved.

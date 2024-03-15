@@ -7,6 +7,8 @@
     <link rel="icon" href="images/icon.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +17,30 @@
 </head>
 <body>
     <header>
-        <span>Benas Kuliesis</span>
+        <span>BK</span>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="current-page">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html"">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <a href="login.html" class="button">LOGIN</a>
     </header>
     <main>
-        <h1>Welcome to my portfolio</h1>
-        <a href="login.html" class="button">LOGIN</a>
+        <div class="home-flexbox">
+            <div class="welcome-message">
+                <h1>Hello there,</h1>
+                <h1>I'm <span>Benas Kuliesis</span></h1>
+                <h2>BSc Computer Science Student </h2>
+                <a href="portfolio.html" class="button portfolio-button before">PORTFOLIO</a>
+            </div>
+            <figure>
+                <img src="images/profile-picture-with-filter.png" alt="Benas Kuliesis" title="Benas Kuliesis">
+            </figure>
+            <a href="portfolio.html" class="button portfolio-button after">PORTFOLIO</a>
+        </div>
     </main>
     <footer>
         &copy; 2024 Benas Kuliesis. All rights reserved.

@@ -29,6 +29,10 @@ aside nav li {
     font-size: 1.2em;
 }
 
+aside nav a:hover {
+    color: var(--highlight-color);
+}
+
 .nav-design {
     position: fixed;
     left: 6em;
@@ -82,19 +86,16 @@ section h2 {
     margin-bottom: 1.5em;
 }
 
-.flex-wrap-content {
+.aboutme-flexbox {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap-reverse;
     width: 100%;
     margin-bottom: 2em;
 }
 
-.flex-wrap-content article {
+.aboutme-flexbox article {
     margin: 1em 1.5em;
-    flex: 1 1 32em;
-    min-width: 32em;
 }
 
 .flex-column-content {
@@ -125,9 +126,8 @@ section h2 {
 
 figure {
     margin: 0 1.5em 2em;
-    min-width: 25em;
+    min-width: 30em;
     max-width: 30em;
-    flex: 1 1 30em;
 }
 
 figure img {
@@ -284,5 +284,16 @@ figure figcaption {
 
     .two-columns {
         grid-column: span 1;
+    }
+}
+
+@media only screen and (max-width: 1320px) {
+    .aboutme-flexbox {
+        flex-direction: column-reverse;
+    }
+
+    .aboutme-flexbox article {
+        align-items: center;
+        text-align: center;
     }
 }
