@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 3em 0;
     gap: 3em;
 }
 
