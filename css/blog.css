@@ -78,6 +78,10 @@ h4 {
 }
 
 @media only screen and (max-width: 696px) {
+    .blog-title {
+        width: calc(100% - 4em);
+    }
+
     .blog-title .button {
         display: inline-block;
     }

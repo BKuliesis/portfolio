@@ -297,3 +297,9 @@ figure figcaption {
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 1012px) {
+    #experience .description {
+        text-align: center;
+    }
+}

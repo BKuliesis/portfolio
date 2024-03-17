@@ -2,8 +2,7 @@
 
 @media only screen and (max-width: 696px) {
     header {
-        grid-template-columns: repeat(2, auto);
-        justify-content: space-between;
+        grid-template-columns: auto;
     }
 
     main, header {
@@ -11,7 +10,7 @@
         padding-right: 1em;
     }
 
-    header .button {
+    header span, header .button {
         display: none;
     }
 
@@ -24,24 +23,13 @@
         width: 100%;
     }
 
-    section, .home-flexbox {
+    section {
         margin-left: 1em;
         margin-right: 1em;
     }
 
     section .grid-content {
         gap: 1em;
-    }
-}
-
-@media only screen and (max-width: 495px) {
-    header {
-        grid-template-columns: 1fr;
-        justify-content: center;
-    }
-
-    header span {
-        display: none;
     }
 }
 
